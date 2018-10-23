@@ -140,7 +140,7 @@ bool isPalindrome(const string s1){
 	if(a!=b)
 	{return false;}
 	else
-	isPalindrome(s1.substr(1, length-2));
+	return isPalindrome(s1.substr(1, length-2));
   }
 
 
