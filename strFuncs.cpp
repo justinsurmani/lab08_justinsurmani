@@ -126,7 +126,9 @@ bool isAnagram(string s1, string s2){
  * You should provide a recursive solution
  */
 bool isPalindrome(const string s1){
-	 int length = s1.length();
+	if(s1.length()==0)
+	{return false;}
+	int length = s1.length();
 	 if(length == 1)
 	 {return true;}
 	 char a = toupper(s1[0]);
